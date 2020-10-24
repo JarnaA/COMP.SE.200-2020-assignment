@@ -5,13 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha testFolder --recursive"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.1.3"
+    "mocha": "^8.2.0"
   }
 }
