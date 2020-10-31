@@ -9,4 +9,4 @@ only:
   - master
 
 after_success:
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - cat ./node_modules/lcov-parse/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
