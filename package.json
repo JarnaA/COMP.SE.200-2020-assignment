@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha testFolder --recursive",
-    "publish-coverage": "coveralls < coverage/lcov.info",
+    "publish-coverage": "coveralls < ./node_modules/lcov-parse/coverage/lcov.info",
     "ci": "npm run test && npm run publish-coverage"
   },
   "author": "",
