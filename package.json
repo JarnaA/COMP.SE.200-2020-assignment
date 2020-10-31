@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "mocha testFolder --recursive",
-    "test-ci": "ng test --watch=false --code-coverage && cat ./node_modules/lcov-parse/coverage/lcov.info | coveralls"
+    "publish-coverage": "coveralls < coverage/lcov.info",
+    "ci": "npm run test && npm run publish-coverage"
   },
   "author": "",
   "license": "MIT",
