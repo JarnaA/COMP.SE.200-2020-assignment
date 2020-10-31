@@ -8,5 +8,5 @@ branches:
 only:
   - master
 
-  after_script:
+after_script:
   - "npm install coveralls@2.11.x && cat coverage/lcov.info | coveralls"
