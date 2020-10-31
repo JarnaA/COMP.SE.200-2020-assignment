@@ -3,3 +3,7 @@ node_js:
   - "lts/*"
 
 before_script: chmod 0777 ./node_modules/.bin/mocha
+
+branches:
+only:
+  - master
