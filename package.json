@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha testFolder --recursive",
-    "test-ci": "ng test --watch=false --code-coverage && cat ./coverage/lcov.info | coveralls"
+    "test-ci": "ng test --watch=false --code-coverage && cat ./node_modules/lcov-parse/coverage/lcov.info | coveralls"
   },
   "author": "",
   "license": "MIT",
