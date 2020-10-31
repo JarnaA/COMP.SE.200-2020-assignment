@@ -1,11 +1,12 @@
 {
   "name": "software-testing-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trying really hard to understand how these things work",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha testFolder --recursive"
+    "test": "mocha testFolder --recursive",
+    "test-ci": "ng test --watch=false --code-coverage && cat ./coverage/lcov.info | coveralls"
   },
   "author": "",
   "license": "MIT",

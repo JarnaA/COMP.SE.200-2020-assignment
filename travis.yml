@@ -7,3 +7,6 @@ before_script: chmod 0777 ./node_modules/.bin/mocha
 branches:
 only:
   - master
+
+  after_script:
+  - "npm install coveralls@2.11.x && cat coverage/lcov.info | coveralls"
