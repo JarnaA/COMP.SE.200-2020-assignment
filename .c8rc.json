@@ -1,0 +1,13 @@
+
+{
+    "report-dir": "./node_modules/lcov-parse/coverage",
+    "reporter": ["text", "lcov"],
+    "exclude": [
+      "**/*.test.js",
+      "**/node_modules",
+      "**/testFolder/*",
+      "**/.internal/*"
+    ],
+    "src": "src",
+    "all": true
+  }
