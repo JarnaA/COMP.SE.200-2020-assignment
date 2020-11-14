@@ -10,10 +10,7 @@ describe("Boolean", () =>{
     it("true is boolean", () =>{
         expect(isBoolean(true)).to.equal(true)
     })
-    //it("devision with negative dividend", () =>{
-     //   expect(divisionOfIntegers(-10,2)).to.include({ quotient: -0, reminder: -10})
-    //})
-    //it("devision with big numbers", () =>{
-    //    expect(divisionOfIntegers(203,10)).to.have.property('quotient')
-    //})
+    it("null is not boolean", () =>{
+        expect(isBoolean(null)).to.equal(false)
+    })
 })
