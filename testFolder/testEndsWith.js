@@ -28,10 +28,31 @@ describe("tests endsWith.js with complete substring", () =>{
 })
 
 describe("tests endsWith.js with substring at certain position", () =>{
-    it("test with matching substring", () =>{
+    it("test with matching substring at the beginning", () =>{
         expect(endsWith("market", "m", 1)).to.equal(true)
     })
     it("test with not matching string", () =>{
         expect(endsWith("market", "e", 1)).to.not.equal(true)
+    })
+    it("test with not matching substring at the end", () =>{
+        expect(endsWith("market", "t", 6)).to.equal(true)
+    })
+})
+
+describe("tests endsWith.js with negative position", () =>{
+    it("test with matching substring", () =>{
+        expect(endsWith("market", "m", -1)).to.equal(false)
+    })
+    it("test with not matching string", () =>{
+        expect(endsWith("market", "e", -4)).to.not.equal(true)
+    })
+})
+
+describe("tests endsWith.js with position bigger than length", () =>{
+    it("test with not matching substring", () =>{
+        expect(endsWith("market", "m", 7)).to.equal(false)
+    })
+    it("test with matching substring", () =>{
+        expect(endsWith("market", "t", 7)).to.equal(true)
     })
 })
