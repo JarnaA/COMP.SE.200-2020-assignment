@@ -16,4 +16,7 @@ describe("CamelCase", () =>{
     //it("uppercase first letter will lowercase with no other changes", () =>{
     //    expect(camelCase("GreenPink")).to.equal("greenPink")
     //})
+    it("three word camelCasing will add only one whitespace", () =>{
+        expect(camelCase("one two three")).to.equal(" oneTwoThree")
+    })
 })
