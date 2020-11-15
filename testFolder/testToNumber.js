@@ -46,8 +46,9 @@ describe("test toNumber.js with arguments expected to not be numbers or fail oth
     it("string with chars", () =>{
         expect(toNumber("#%")).to.be.NaN
     })
+    const mySymbol = Symbol()
     it("symbol as parameter", () =>{
-        expect(toNumber(Symbol)).to.be.NaN
+        expect(toNumber(mySymbol)).to.be.NaN
     })
     it("has additional marks", () => {
         expect(toNumber("3.5 €")).to.be.NaN
