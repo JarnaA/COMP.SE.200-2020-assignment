@@ -72,7 +72,7 @@ describe("test toNumber.js with arguments expected to not be numbers or fail oth
         expect(toNumber()).to.be.NaN
     })
     it("null as parameter", () =>{
-        expect(toNumber()).to.be.NaN
+        expect(toNumber(null)).to.not.be.NaN
     })
 })
 
