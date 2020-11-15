@@ -68,6 +68,12 @@ describe("test toNumber.js with arguments expected to not be numbers or fail oth
     it("boolean as parameter", () =>{
         expect(toNumber(true)).to.not.be.NaN
     })
+    it("empty parameter", () => {
+        expect(toNumber()).to.be.NaN
+    })
+    it("null as parameter", () =>{
+        expect(toNumber()).to.be.NaN
+    })
 })
 
 describe("test toNumber.js with arguments with redundant whitespaces", () => {
