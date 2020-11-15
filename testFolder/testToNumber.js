@@ -19,6 +19,9 @@ describe("Test toNumber.js with supposed numbers", () =>{
     it("positive double with wrong decimal separator is typeof Number", () =>{
         expect(toNumber(2,3)).to.be.a("number")
     })
+    it("test with zero", () =>{
+        expect(toNumber(0)).to.equal(0)
+    })
 })
 
 describe("test toNumber.js with strings", () =>{
@@ -40,14 +43,20 @@ describe("test toNumber.js with strings", () =>{
 })
 
 describe("test toNumber.js with arguments expected to not be numbers or fail otherways", () =>{
-    it("not a number", () =>{
+    it("string with chars", () =>{
         expect(toNumber("#%")).to.be.NaN
+    })
+    it("symbol as parameter", () =>{
+        expect(toNumber(Symbol)).to.be.NaN
     })
     it("has additional marks", () => {
         expect(toNumber("3.5 €")).to.be.NaN
     })
     it("has wrong decimal separator", () =>{
         expect(toNumber("3,5")).to.be.NaN
+    })
+    it("array as parameter", () =>{
+        expect(toNumber([1, 3, 5])).to.NaN
     })
 })
 
