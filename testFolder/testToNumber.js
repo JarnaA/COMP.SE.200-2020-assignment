@@ -60,7 +60,13 @@ describe("test toNumber.js with arguments expected to not be numbers or fail oth
         return 1 + 1
     }
     it("function as parameter", () =>{
-        expect(toNumber(addOneToOne)).to.NaN
+        expect(toNumber(addOneToOne)).to.be.NaN
+    })
+    it("array as parameter", () =>{
+        expect(toNumber([1, 4, 7])).to.be.NaN
+    })
+    it("boolean as parameter", () =>{
+        expect(toNumber(true)).to.not.be.NaN
     })
 })
 
