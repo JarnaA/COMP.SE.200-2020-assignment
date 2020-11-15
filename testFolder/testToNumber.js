@@ -56,9 +56,11 @@ describe("test toNumber.js with arguments expected to not be numbers or fail oth
     it("has wrong decimal separator", () =>{
         expect(toNumber("3,5")).to.be.NaN
     })
-    var array = [1, 3, 5]
-    it("array as parameter", () =>{
-        expect(toNumber(array)).to.NaN
+    function addOneToOne() {
+        return 1 + 1
+    }
+    it("function as parameter", () =>{
+        expect(toNumber(addOneToOne)).to.NaN
     })
 })
 
