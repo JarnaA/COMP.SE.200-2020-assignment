@@ -87,3 +87,15 @@ describe("test toNumber.js with arguments with redundant whitespaces", () => {
         expect(toNumber("3 .5")).to.be.NaN
     })
 })
+
+describe("test toNumber.js with binary, octal and hexadecimal ", () => {
+    it("binary to number", () => {
+        expect(toNumber(0b101)).to.equal(5)
+    })
+    it("octal to number", () => {
+        expect(toNumber(0o5)).to.equal(5)
+    })
+    it("hexadecimal to number", () => {
+        expect(toNumber(0x5)).to.equal(5)
+    })
+})
