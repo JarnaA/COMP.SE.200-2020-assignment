@@ -37,4 +37,7 @@ describe("Test every.js", () =>{
     it("test with boolean in string array", () =>{
         expect(every(["one", "cat", false, "laptop"], String)).to.equal(true)
     })
+    it("test with empty array", () =>{
+        expect(every([], Number)).to.equal(true)
+    })
 })
