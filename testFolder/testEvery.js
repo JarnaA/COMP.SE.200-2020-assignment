@@ -40,4 +40,7 @@ describe("Test every.js", () =>{
     it("test with empty array", () =>{
         expect(every([], Number)).to.equal(true)
     })
+    it("test with null as array", () =>{
+        expect(every(null, Number)).to.equal(true)
+    })
 })
