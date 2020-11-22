@@ -8,6 +8,18 @@ let buffer = new ArrayBuffer(16);
 let int32View = new Int32Array(buffer);
 let emptyInt16View = new Int16Array();
 
+// let's set up a function for test
+function addOneToOne() {
+    return 1 + 1
+}
+
+//let's create an empty Set for tests
+let testSet = new Set();
+// let's create another Set with values
+let testSet2 = new Set();
+testSet2.add("one");
+testSet2.add(2);
+
 describe("Test isEmpty.js with expected true values", () =>{
     it("test with null", () =>{
         expect(isEmpty(null)).to.equal(true)
@@ -24,6 +36,12 @@ describe("Test isEmpty.js with expected true values", () =>{
     })
     it("test with arguments", () =>{
         expect(isEmpty(buffer, int32View, emptyInt16View)).to.equal(true)
+    })
+    it("test with function", () =>{
+        expect(isEmpty(addOneToOne)).to.equal(true)
+    })
+    it("test with empty Set", () =>{
+        expect(isEmpty(testSet)).to.equal(true)
     })
 })
 
@@ -42,5 +60,7 @@ describe("Test isEmpty.js with expected false values", () =>{
     it("test with typed array", () =>{
         expect(isEmpty(int32View)).to.equal(false)
     })
-    //const testCollection = 
+    it("test with Set with values", () =>{
+        expect(isEmpty(testSet2)).to.equal(false)
+    })
 })
