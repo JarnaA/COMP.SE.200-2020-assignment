@@ -19,6 +19,12 @@ describe("Test isEmpty.js with expected true values", () =>{
     it("test with typed array", () =>{
         expect(isEmpty(emptyInt16View)).to.equal(true)
     })
+    it("test with buffer", () =>{
+        expect(isEmpty(buffer)).to.equal(true)
+    })
+    it("test with arguments", () =>{
+        expect(isEmpty(buffer, int32View, emptyInt16View)).to.equal(true)
+    })
 })
 
 describe("Test isEmpty.js with expected false values", () =>{
