@@ -30,6 +30,9 @@ Person.prototype.fullname = function() {
 let testPerson = new Person("Buzz");
 let testPersonFullname = Person.prototype.fullname;
 
+// let's create a test collection
+var person = {firstName:"John", lastName:"Doe", age:46};
+
 describe("Test isEmpty.js with expected true values", () =>{
     it("test with null", () =>{
         expect(isEmpty(null)).to.equal(true)
@@ -79,5 +82,7 @@ describe("Test isEmpty.js with expected false values", () =>{
     it("test with Set with values", () =>{
         expect(isEmpty(testSet2)).to.equal(false)
     })
-    
+    it("test with collection", () =>{
+        expect(isEmpty(person)).to.equal(false)
+    })
 })
