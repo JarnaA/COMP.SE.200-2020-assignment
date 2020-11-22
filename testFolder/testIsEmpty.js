@@ -20,6 +20,14 @@ let testSet2 = new Set();
 testSet2.add("one");
 testSet2.add(2);
 
+// let's create a thing we can use prototypes with
+function Person(name){
+    this.firstName = name;
+}
+Person.prototype.fullname = function() {
+    return this.firstName + " Lightyear";
+};
+
 describe("Test isEmpty.js with expected true values", () =>{
     it("test with null", () =>{
         expect(isEmpty(null)).to.equal(true)
@@ -42,6 +50,9 @@ describe("Test isEmpty.js with expected true values", () =>{
     })
     it("test with empty Set", () =>{
         expect(isEmpty(testSet)).to.equal(true)
+    })
+    it("test with prototype", () => {
+        expect(isEmpty(Person.prototype.fullname)).to.equal(true)
     })
 })
 
