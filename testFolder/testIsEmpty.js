@@ -27,6 +27,8 @@ function Person(name){
 Person.prototype.fullname = function() {
     return this.firstName + " Lightyear";
 };
+let testPerson = new Person("Buzz");
+let testPersonFullname = Person.prototype.fullname;
 
 describe("Test isEmpty.js with expected true values", () =>{
     it("test with null", () =>{
@@ -54,6 +56,9 @@ describe("Test isEmpty.js with expected true values", () =>{
     it("test with prototype", () => {
         expect(isEmpty(Person.prototype.fullname)).to.equal(true)
     })
+    it("test with prototype fullname", () =>{
+        expect(isEmpty(testPersonFullname)).to.equal(true)
+    })
 })
 
 describe("Test isEmpty.js with expected false values", () =>{
@@ -74,4 +79,5 @@ describe("Test isEmpty.js with expected false values", () =>{
     it("test with Set with values", () =>{
         expect(isEmpty(testSet2)).to.equal(false)
     })
+    
 })
