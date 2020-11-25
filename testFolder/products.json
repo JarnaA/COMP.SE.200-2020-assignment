@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Maito",
+    "category": "Maitotuotteet",
+    "price": 1.20,
+    "size": 1,
+    "producer": "Laitilan maito",
+    "best_before": "",
+    "balance": "104",
+    "keyword": "maito, rasvaton",
+    "delivery_method": "nouto"
+  },
+  {
+    "name": "Ruisleipä",
+    "category": "Leivät",
+    "price": 1.50,
+    "size": 6,
+    "producer": "Riihimäen ruis",
+    "best_before": "",
+    "balance": "534",
+    "keyword": "ruis, leipä",
+    "delivery_method": "nouto, postipaketti"
+  },
+  {
+    "name": "Pastöroimanton maito",
+    "category": "Maitotuotteet",
+    "price": 3.50,
+    "size": 1,
+    "producer": "Laitilan maito",
+    "best_before": "30.11.2020",
+    "balance": "30",
+    "keyword": "maito, pastöroimaton, tilamaito",
+    "delivery_method": "nouto"
+  },
+  {
+    "name": "Rasvaton maito",
+    "category": "Maitotuotteet",
+    "price": 1.35,
+    "size": 1,
+    "producer": "Karkkilan meijeri",
+    "best_before": "31.3.2021",
+    "balance": "120",
+    "keyword": "maito, rasvaton, UHT",
+    "delivery_method": "nouto, postipaketti"
+  },
+  {
+    "name": "Kurkku",
+    "category": "Hedelmät ja vihannekset",
+    "price": 2.80,
+    "size": 1,
+    "producer": "Omenatarha Oy",
+    "best_before": "",
+    "balance": "98",
+    "keyword": "kurkku",
+    "delivery_method": "nouto, postipaketti"
+  },
+  {
+    "name": "Tomaatti",
+    "category": "Hedelmät ja vihannekset",
+    "price": 3.05,
+    "size": 5,
+    "producer": "Omenatarha Oy",
+    "best_before": "",
+    "balance": "234",
+    "keyword": "tomaatti",
+    "delivery_method": "nouto, postipaketti"
+  },
+  {
+    "name": "Mörttilän luomuvehnäjauho",
+    "category": "Kuivatuotteet",
+    "price": 9.50,
+    "size": 3,
+    "producer": "Mörttilän tila",
+    "best_before": "",
+    "balance": "10",
+    "keyword": "leivonta, jauhot, luomu",
+    "delivery_method": "nouto, postipaketti"
+  },
+  {
+    "name": "Mörttilän luomuvehnäjauho",
+    "category": "Kuivatuotteet",
+    "price": 3.50,
+    "size": 1,
+    "producer": "Mörttilän tila",
+    "best_before": "",
+    "balance": "34",
+    "keyword": "leivonta, jauhot, luomu",
+    "delivery_method": "nouto, postipaketti"
+  },
+  {
+    "name": "Mörttilän vuohenjuusto",
+    "category": "Maitotuotteet",
+    "price": 6.00,
+    "size": 200,
+    "producer": "Mörttilän tila",
+    "best_before": "21.1.2021",
+    "balance": "3",
+    "keyword": "juusto, vuohenjuusto",
+    "delivery_method": "nouto"
+  }
+]
