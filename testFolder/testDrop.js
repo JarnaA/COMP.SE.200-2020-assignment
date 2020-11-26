@@ -19,4 +19,12 @@ describe("test drop.js", () =>{
         expect(drop([2, 6, 10], 0)).to.deep.equal([2, 6, 10])
     });
 
+    it("array is empty", () =>{
+        expect(drop([], 3)).to.deep.equal([])
+    });
+
+    it("array is empty", () =>{
+        expect(drop([], 3)).to.deep.equal([])
+    });
+
    })
