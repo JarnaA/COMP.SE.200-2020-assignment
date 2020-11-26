@@ -27,4 +27,8 @@ describe("test drop.js", () =>{
         expect(drop([], 3)).to.deep.equal([])
     });
 
+    it("drops less than zero elements", () =>{
+        expect(drop([2, 6, 10], -3)).to.deep.equal([2, 6, 10])
+    });
+
    })
