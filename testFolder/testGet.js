@@ -14,7 +14,10 @@ describe("test get.js", () =>{
     it("gets price from object with the help of array", () =>{
         expect(get(basket, ['Ruisleipä', '0', 'price'])).to.equal(1.50)
     });
-    it("returns default value (0) if product not found", () =>{
+    it("returns default value ('Not found') if product not found", () =>{
         expect(get(basket, 'Maito[0].price', 'Not found')).to.equal('Not found')
+    });
+    it("object is null", () =>{
+        expect(get([], 'Maito[0].price', 'Not found')).to.equal('Not found')
     });
    })
