@@ -15,6 +15,6 @@ describe("test get.js", () =>{
         expect(get(basket, ['Ruisleipä', '0', 'price'])).to.equal(1.50)
     });
     it("returns default value (0) if product not found", () =>{
-        expect(get(basket, 'Maito[0].price', '0')).to.equal('0')
+        expect(get(basket, 'Maito[0].price', 'Not found')).to.equal('Not found')
     });
    })
