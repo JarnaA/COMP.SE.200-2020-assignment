@@ -4,23 +4,23 @@ import eq from "../src/eq.js"
 const expect = chai.expect
 
 describe("test eq.js", () =>{    
-    const object = { 'a': 1 }
-    const other = { 'a': 1 }
+    const vehnajauho1 = { 'nimi': 'Mörttilän luomuvehnäjauho' }
+    const vehnajauho2 = { 'nimi': 'Mörttilän luomuvehnäjauho' }
     
     
     it("same objects", () =>{
-        expect(eq(object, object)).to.equal(true)
+        expect(eq(vehnajauho1, vehnajauho1)).to.equal(true)
     });
     it("different variables with same values", () =>{
-        expect(eq(object, other)).to.equal(false)
+        expect(eq(vehnajauho1, vehnajauho2)).to.equal(false)
     });
     it("same strings", () =>{
-        expect(eq('a', 'a')).to.equal(true)
+        expect(eq('Mörttilän luomuvehnäjauho', 'Mörttilän luomuvehnäjauho')).to.equal(true)
     });
 
-    /* Ei mene läpi, odottaa tulokseksi trueta?
+    /*Ei mene läpi, tulokseksi tulee true.
     it("string and object of the same string", () =>{
-        expect(eq('a', Object('a'))).to.equal(false)
+        expect(eq('Mörttilän luomuvehnäjauho', Object('Mörttilän luomuvehnäjauho'))).to.equal(false)
     });*/
 
     it("two NaNs", () =>{
