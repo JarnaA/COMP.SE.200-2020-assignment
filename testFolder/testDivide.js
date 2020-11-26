@@ -22,9 +22,8 @@ describe("test divide.js", () =>{
         expect(divide(4, undefined)).to.equal(4)
     });
 
-    /* Ei mene läpi, vaikka odotettu tulos on sama kuin saatu tulos
     it("divides with zero", () =>{
-        expect(divide(6, 0)).to.equal(NaN)
-    });*/
+        expect(divide(6, 0)).to.deep.equal(NaN)
+    });
 
    })
