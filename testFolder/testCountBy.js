@@ -21,6 +21,6 @@ describe("test countBy.js", () =>{
     it("checks if correct category count can be found", () =>{
         expect(countBy(products, value => value.category))
             .to.deep.equal({ 'Maitotuotteet': 3, 'Leivät': 1})
-    });*/
-
+    });
+    */
    })

@@ -13,6 +13,9 @@ describe("test ceil.js", () =>{
     it("test with three decimals rounded up to one decimal", () =>{
         expect(ceil(1.234, 1)).to.equal(1.3)
     })
+    it("test with four decimals rounded up to two decimal", () =>{
+        expect(ceil(9.4999, 2)).to.equal(9.50)
+    })
     it("test with negative parameter", () =>{
         expect(ceil(1001.234, -2)).to.equal(1100)
     })
