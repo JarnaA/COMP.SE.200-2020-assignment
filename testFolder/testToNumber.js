@@ -98,4 +98,7 @@ describe("test toNumber.js with binary, octal and hexadecimal ", () => {
     it("hexadecimal to number", () => {
         expect(toNumber(0x5)).to.equal(5)
     })
+    it("test with bad hexadecimal", () =>{
+        expect(toNumber(+0x5)).to.equal(5)
+    })
 })
