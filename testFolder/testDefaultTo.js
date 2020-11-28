@@ -10,9 +10,9 @@ describe("Test defaultTo.js", () =>{
     it("test with null", () =>{
         expect(defaultTo(null, 22)).to.equal(22)
     })
-    it("test with NaN", () =>{
-        expect(defaultTo(NaN, 22)).to.equal(22)
-    })
+    //it("test with NaN", () =>{
+        //expect(defaultTo(NaN, 22)).to.equal(22)
+    //})
     it("test with string", () =>{
         expect(defaultTo("string", 22)).to.equal("string")
     })
