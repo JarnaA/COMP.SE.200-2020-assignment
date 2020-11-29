@@ -19,4 +19,7 @@ describe("test isDate.js", () =>{
     it("test with new Date with date string", () =>{
         expect(isDate(new Date('12 24 2020'))).to.equal(true)
     })
+    it("test with with date string", () =>{
+        expect(isDate('12 24 2020')).to.equal(false)
+    })
 })
