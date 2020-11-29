@@ -13,4 +13,7 @@ describe("Test words.js", () =>{
     it("test with string and pattern to include special characters", () =>{
         expect(words("worth of million $", /[^, ]+/g)).to.have.ordered.members(["worth", "of", "million", "$"])
     })
+    it("test with empty string and pattern",  () =>{
+        expect(words("", /[^, ]+/g)).to.have.ordered.members([])
+    })
 })
