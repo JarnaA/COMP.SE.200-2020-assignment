@@ -13,4 +13,10 @@ describe("Boolean", () =>{
     it("null is not boolean", () =>{
         expect(isBoolean(null)).to.equal(false)
     })
+    it("undeficned is not boolean", () =>{
+        expect(isBoolean(undefined)).to.equal(false)
+    })
+    it("array is not boolean", () =>{
+        expect(isBoolean([1, 2, 3])).to.equal(false)
+    })
 })
