@@ -16,4 +16,8 @@ describe("test reduce.js", () =>{
     it("reduce with empty array", () =>{
         expect(reduce([], (sum, n) => sum + n, 0)).to.equal(0)
     });
+
+    it("reduce without array", () =>{
+        expect(reduce({}, (sum, n) => sum + n, 0)).to.equal(0)
+    });
    })
