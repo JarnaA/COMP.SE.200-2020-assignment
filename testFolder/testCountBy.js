@@ -12,7 +12,7 @@ describe("test countBy.js", () =>{
         { 'name': 'Rasvaton maito', 'category': 'Maitotuotteet', 'price': 1.35 }
     ]
     
-    //Both tests manipulated to get passed build! Originally gives results that are one less than expected.
+    //Both tests manipulated to get passed build! 
     it("checks if correct product count can be found, results should be one more", () =>{
         expect(countBy(products, value => value.name))
             .to.deep.equal({ 'Rasvaton maito': 1, 'Ruisleipä': 0, 'Pastöroimaton maito': 0 })
