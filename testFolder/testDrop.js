@@ -31,4 +31,12 @@ describe("test drop.js", () =>{
         expect(drop([2, 6, 10], -3)).to.deep.equal([2, 6, 10])
     });
 
+    it("Empty array as parameter", () =>{
+        expect(drop([], 4)).to.deep.equal([])
+    });
+
+    it("Null as parameter", () =>{
+        expect(drop(null, 4)).to.deep.equal([])
+    });
+
    })
