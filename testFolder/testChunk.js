@@ -23,8 +23,12 @@ describe("test chunk.js", () =>{
         expect(chunk([12, 34, 56, 78], 0)).to.deep.equal([])
     });
 
-    it("chunks empty array to length of four", () =>{
+    it("chunks empty array", () =>{
         expect(chunk([], 4)).to.deep.equal([])
+    });
+
+    it("chunks null", () =>{
+        expect(chunk(null, 4)).to.deep.equal([])
     });
     
    })
