@@ -62,6 +62,12 @@ describe("Test isEmpty.js with expected true values", () =>{
     it("test with prototype fullname", () =>{
         expect(isEmpty(testPersonFullname)).to.equal(true)
     })
+    it("test with boolean value", () =>{
+        expect(isEmpty(false)).to.equal(true)
+    })
+    it("test with number", () =>{
+        expect(isEmpty(Number(2.3))).to.equal(true)
+    })
 })
 
 describe("Test isEmpty.js with expected false values", () =>{
