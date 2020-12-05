@@ -22,4 +22,10 @@ describe("test isDate.js", () =>{
     it("test with with date string", () =>{
         expect(isDate('12 24 2020')).to.equal(false)
     })
+    it("test with null", () =>{
+        expect(isDate(null)).to.equal(false)
+    })
+    it("test with undefined", () =>{
+        expect(isDate(undefined)).to.equal(false)
+    })
 })
