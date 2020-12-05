@@ -68,6 +68,10 @@ describe("Test isEmpty.js with expected true values", () =>{
     it("test with number", () =>{
         expect(isEmpty(Number(2.3))).to.equal(true)
     })
+    it("test with simplier kind of prototype", () =>{
+        let numberProto = Number.prototype;
+        expect(isEmpty(numberProto)).to.equal(true)
+    })
 })
 
 describe("Test isEmpty.js with expected false values", () =>{
