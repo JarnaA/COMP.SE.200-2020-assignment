@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha testFolder --exclude testFolder/testCompact.js",
+    "test": "mocha testFolder",
     "test:ci": "npm run coverage && coveralls < ./node_modules/lcov-parse/coverage/lcov.info",
     "coverage": "c8 npm run test",
     "coverage:report": "c8 report"
